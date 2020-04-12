@@ -13,10 +13,6 @@ function scrollFunction() {
 
 
 
-
-
-
-
 //-----CUSTOM CURSOR
 /*
 // 01 store the .cursor in a simple variable called cursor

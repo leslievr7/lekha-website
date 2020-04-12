@@ -3,18 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>title</title>
+	<title>Lekha - A Devanagari-inspired Typeface</title>
 	<meta name="author" content="Leslie">
 	<meta name="description" content="description here">
 	<meta name="keywords" content="keywords,here">
 	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
 </head>
 <body>
 	<nav>
-		<a class="navbuttons link" id="nav_features" href>FEATURES</a>
+		<a class="navbuttons link" id="nav_features" href="#ach_features">FEATURES</a>
 		<a class="navbuttons link" id="nav_download" href>DOWNLOAD</a>
 		<a class="navbuttons link" id="nav_process" href>PROCESS</a>
 		<a class="navbuttons link" id="nav_magazine" href>MAGAZINE</a>
@@ -27,17 +27,48 @@
 		<!--<img id="logoref" src="img/Logo_ref.png">-->
 		<img id="landinglogo" src="img/Logo.svg">
 	</header>
-	<section class="sec_features">
-		<h1>FEATURES</h1>
-		<img id="f01img01" class="leftgrid focus" src="img/letters/d.svg">
-		<img id="f01img02" class="leftgrid" src="img/letters/hindi_a.svg">
-		<img id="f01shp01" class="leftgrid" src="img/shapes/pink_01.svg">
-		<img id="f01shp02" class="leftgrid" src="img/shapes/pink_02.svg">
+	<section id="ach_features" class="sec_features">
+		<!--<h1>FEATURES</h1>-->
+		
 		<article class="feature01">
-			<h4>LEFT-SLANTED NIB</h4>
-			<p>Unlike traditional Western typography that is written<br>with a right-slanted nib, Lekha features an opposite<br>nib angle much like traditional Devanagari writings<br>which gives it a distinct, handwritten feel.</p>
+			<div class="leftgrid">
+				<img id="f01img01" class="focus" src="img/letters/Asset%206.svg">
+				<img id="f01img02" src="img/letters/Asset%205.svg">
+			</div>
+			<div class="rightgrid">
+				<h4>LEFT-SLANTED NIB</h4>
+				<p>Unlike traditional Western typography that is written with a right-slanted nib, Lekha features an opposite nib angle much like traditional Devanagari writings which gives it a distinct, handwritten feel.</p>
+			</div>
 		</article>
+		
+		<article class="feature02">
+			<div class="rightgrid">
+				<img id="f02img01" class="focus" src="img/letters/Asset%208.svg">
+				<img id="f02img02" src="img/letters/Asset%207.svg">
+			</div>
+			<div class="leftgrid">
+				<h4>REVERSED STRESS ANGLE</h4>
+				<p>Due to the reversed nib angle, the vertical stress angle leans towards the right. Care was taken to not make the letters appear unsightly, by making the transition from the thick stroke to the thin in one swooping motion.</p>
+			</div>
+		</article>
+		
+		<article class="feature03">
+			<div class="leftgrid">
+				<img id="f03img01" class="focus" src="img/letters/Asset%2010.svg">
+				<img id="f03img02" src="img/letters/Asset%209.svg">
+			</div>
+			<div class="rightgrid">
+				<h4>BALANCED</h4>
+				<p>One of the problems was the visual weight of the joint due to the nib angle. This was solved by narrowing the thick stroke as it approaches the stem, as seen in Latin letters.</p>
+			</div>
+		</article>
+		
 	</section>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<script src="js/jquery.nicescroll.js"></script>
 	
 	<script src="js/script.js"></script>
 	<script src="js/cursor.js"></script>

@@ -35,7 +35,7 @@ var cursor = $(".cursor"); // Store the css .cursor in a variable
     $(".focus")
         .mouseenter(function() {
             cursor.css({
-                transform: "scale(8)"
+                transform: "scale(10)"
             });
         })
         .mouseleave(function() {
