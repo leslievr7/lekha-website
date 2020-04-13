@@ -49,6 +49,13 @@ $('a[href*="#"]')
     }
   });
 
+//Randomize the placeholder text
+$(function(){
+  var list = ['Do you like ginger in your chai?','What do you call a crocodile in Hindi?','Which is your favourite Bollywood actor?','Aapka naam?','Aapki naam?','Yahan kuchh likh de, Thakur.','Full names of Shankar-Ehsaan-Loy?','Mogambo khush hua ki nahin?','Picture abhi baaki hain, mere dost.','Tumse ho payega.','Kitne patr the?'],
+      r = Math.floor(Math.random() * list.length);
+  $('#textfield').prop('placeholder',list[r]);
+});
+
 
 //-----CUSTOM CURSOR
 /*
