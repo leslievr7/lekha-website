@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,700;1,700&family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
+@font-face {
+	font-family: Lekha;
+	src: url('../fonts/Lekha.otf') format('otf');
+}
 
 body {
 	height: 2000px;
@@ -17,8 +21,13 @@ body {
 	z-index: 10;
 	-webkit-text-stroke: 0.8px black;
 	-webkit-text-fill-color: transparent;
+	-webkit-animation: fade 1s;
 }
 .navbuttons:hover {
+	-webkit-text-stroke: 0px;
+	-webkit-text-fill-color: black;
+}
+.navbuttons:active {
 	-webkit-text-stroke: 0px;
 	-webkit-text-fill-color: black;
 }
@@ -33,12 +42,12 @@ body {
 	top: 0px;
 }
 
-#nav_process {
+#nav_testdrive {
 	left: 0px;
 	bottom: 0px;
 }
 
-#nav_magazine {
+#nav_process {
 	right: 0px;
 	bottom: 0px;
 }
@@ -102,13 +111,25 @@ header {
 
 .sec_features {
 	width: 100%;
-	height: 300vh;
+	height: 400vh;
 	background-color: whitesmoke;
 	display: grid;
 	grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.sec_testdrive {
+	background-color: whitesmoke;
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+	grid-template-rows: 1fr;
+	
 }
 
+/*---------------SECTION-SPECIFIC ELEMENTS---------------*/
+
+/*-----FEATURES SECTION ELEMENTS-----*/
 .feature01 {
 	grid-column: 2 / 4;
 	grid-row: 1;
@@ -130,8 +151,15 @@ header {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
+.feature04 {
+	grid-column: 2 / 4;
+	grid-row: 4;
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
 
-/*-----Two grid boxes in one row: one on the left and one on the right-----*/
+/*Two grid boxes in one row: one on the left and one on the right*/
 
 .leftgrid {
 	grid-column-start: 1;
@@ -155,8 +183,6 @@ header {
 	
 	height: 600px;
 	
-	z-index: 1;
-	
 }
 #f01img02 {
 	position: absolute;
@@ -164,8 +190,6 @@ header {
 	left: -10%;
 	
 	height: 200px;
-	
-	z-index: 3;
 }
 
 #f02img01 {	
@@ -173,10 +197,7 @@ header {
 	top: 20%;
 	left: 10%;
 	
-	height: 400px;
-	
-	z-index: 1;
-	
+	height: 400px;	
 }
 #f02img02 {
 	position: absolute;
@@ -184,8 +205,6 @@ header {
 	right: -10%;
 	
 	height: 200px;
-	
-	z-index: 3;
 }
 
 #f03img01 {	
@@ -194,9 +213,6 @@ header {
 	right: 10%;
 	
 	height: 350px;
-	
-	z-index: 1;
-	
 }
 #f03img02 {
 	position: absolute;
@@ -204,13 +220,26 @@ header {
 	right: -20%;
 	
 	height: 170px;
+}
+
+#f04img01 {	
+	position: absolute;
+	top: 30%;
+	left: 20%;
 	
-	z-index: 3;
+	height: 500px;
+}
+#f04img02 {
+	position: absolute;
+	top: 5%;
+	left: -20%;
+	
+	height: 250px;
 }
 
 
 
-h4 {
+h4.features_text {
 	position: absolute;
 	top: 35%;
 	left: 10%;
@@ -221,7 +250,7 @@ h4 {
 	letter-spacing: -0.025em;
 }
 
-p {
+p.features_text {
 	position: absolute;
 	top: 45%;
 	left: 10%;
@@ -231,7 +260,7 @@ p {
 	line-height: 1.5em;
 }
 
-
+/*Feature Title & Description*/
 /*h1 {
 	position: absolute;
 	
@@ -242,9 +271,35 @@ p {
 	letter-spacing: -0.07em;
 }*/
 
-/*-----Feature Title & Description*/
 
 
+
+/*-----TESTDRIVE SECTION ELEMENTS-----*/
+
+.textbox {
+	grid-column: 2 / 4;
+	grid-row: 1;
+	
+	padding-top: 10%;
+	
+	width: 100%;
+	height: 100%;
+}
+
+#textfield {
+	width: 100%;
+	height: 80%;
+	font-family: 'Lekha';
+	font-size: 7.9em;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	resize: none;
+	
+	text-align: center;
+	line-height: 1em;
+	letter-spacing: -0.01em;
+}
 
 
 
