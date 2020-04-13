@@ -23,7 +23,7 @@ var cursor = $(".cursor"); // Store the css .cursor in a variable
 	$(".link")
         .mouseenter(function() {
             cursor.css({
-                transform: "scale(3.5)"
+                transform: "scale(5)"
             });
         })
         .mouseleave(function() {
