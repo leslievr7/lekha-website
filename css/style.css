@@ -274,11 +274,11 @@
 	/*Feature Title & Description*/
 	/*h1 {
 	position: absolute;
-	
+	overflow: hidden;
 	
 	font-family: 'Archivo Black', sans-serif;
 	opacity: 0.05;
-	font-size: 12em;
+	font-size: 24em;
 	letter-spacing: -0.07em;
 }*/
 	
@@ -427,6 +427,10 @@
 		grid-template-rows: 1fr 1fr 1fr 1fr;
 	}
 	
+	.rightgrid {
+		overflow: hidden;
+	}
+	
 	#f01img01 {	
 		position: absolute;
 		top: 15%;
@@ -498,6 +502,131 @@
 		letter-spacing: -0.025em;
 	}
 }
+
+/*@media (max-width: 480px)
+{
+	body {
+		margin: 0px;
+	}
+	
+	.navbuttons {
+		font-size: 1.5em;	
+	}
+	
+	.sec_features {
+		width: 100%;
+		height: 240vh;
+		background-color: whitesmoke;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		
+	}
+	
+	
+	.feature01 {
+		grid-column: 1 / 3;
+		grid-row: 1;
+		
+		
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.feature02 {
+		grid-column: 1 / 3;
+		grid-row: 2;
+		
+		
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.feature03 {
+		grid-column: 1 / 3;
+		grid-row: 3;
+		
+		
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.feature04 {
+		grid-column: 1 / 3;
+		grid-row: 4;
+		
+		
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	.leftgrid {
+	}
+	.rightgrid {
+		transform: translateX(-7%);
+	}
+	
+	#f01img01 {
+		position: absolute;
+		top: 0%;
+		left: 20%;
+		
+		height: 270px;
+	}
+	#f02img01 {
+		position: absolute;
+		top: 0%;
+		right: 20%;
+		
+		height: 200px;
+	}
+	#f03img01 {
+		content: url(../img/letters/Asset%2013.svg);
+		
+		position: absolute;
+		top: 0%;
+		left: 10%;
+		
+		height: 180px;
+	}
+	#f04img01 {
+		position: absolute;
+		top: 0%;
+		right: 0%;
+		
+		height: 200px;
+	}
+	#f01img02 {	
+		display: none;
+	}
+	#f02img02 {	
+		display: none;
+	}
+	#f03img02 {	
+		display: none;
+	}
+	#f04img02 {	
+		display: none;
+	}
+	
+	h4.features_text {
+		position: absolute;
+		top: 10%;
+		left: 10%;
+		
+		font-family: 'Archivo', sans-serif;
+		font-style: italic;
+		font-size: 1.2em;
+		letter-spacing: -0.025em;
+	}
+	p.features_text {
+		position: absolute;
+		top: 24%;
+		left: 10%;
+		
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 0.95em;
+		line-height: 1.5em;
+	}
+}*/
+
 
 /*-----CUSTOM CURSOR STYLE, HIDE DEFAULT CURSOR-----*/
 .cursor {

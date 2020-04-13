@@ -3,7 +3,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-		document.getElementById("landinglogo").style.cssText = "width: 8%; opacity: 1; top: 5.5%;";
+		document.getElementById("landinglogo").style.cssText = "width: 15%; opacity: 1; top: 3.5%;";
 		document.getElementById("landinglogo").src = "img/Logo_small.svg";
 	} else {
 		document.getElementById("landinglogo").style.cssText = "width: 49.5%; opacity: 0;";
