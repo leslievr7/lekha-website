@@ -11,7 +11,7 @@ function scrollFunction() {
 	}
 }
 
-
+/*
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -47,7 +47,7 @@ $('a[href*="#"]')
         });
       }
     }
-  });
+  });*/
 
 //Randomize the placeholder text
 $(function(){
@@ -55,6 +55,8 @@ $(function(){
       r = Math.floor(Math.random() * list.length);
   $('#textfield').prop('placeholder',list[r]);
 });
+
+
 
 
 //-----CUSTOM CURSOR
