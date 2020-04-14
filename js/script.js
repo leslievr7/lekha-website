@@ -3,7 +3,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-		document.getElementById("landinglogo").style.cssText = "width: 15%; opacity: 1; top: 3.5%;";
+		document.getElementById("landinglogo").style.cssText = "width: 8%; opacity: 1; top: 5%;";
 		document.getElementById("landinglogo").src = "img/Logo_small.svg";
 	} else {
 		document.getElementById("landinglogo").style.cssText = "width: 49.5%; opacity: 0;";
@@ -50,7 +50,7 @@ $('a[href*="#"]')
 
 //Randomize the placeholder text
 $(function(){
-  var list = ['Do you like ginger in your chai?','What do you call a crocodile in Hindi?','Which is your favourite Bollywood actor?','Aapka naam?','Aapki naam?','Yahan kuchh likh de, Thakur.','Full names of Shankar-Ehsaan-Loy?','Mogambo khush hua ki nahin?','Picture abhi baaki hain, mere dost.','Tumse ho payega.','Kitne patr the?'],
+  var list = ['Do you like ginger in your chai?','What do you call a crocodile in Hindi?','Favourite Bollywood actor?','Aapka naam?','Aapki naam?','Yahan kuchh likh de, Thakur.','Full names of Shankar-Ehsaan-Loy?','Mogambo khush hua ki nahin?','Kitne patr the?'],
       r = Math.floor(Math.random() * list.length);
   $('#textfield').prop('placeholder',list[r]);
 });
