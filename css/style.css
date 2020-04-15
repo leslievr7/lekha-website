@@ -21,9 +21,10 @@
 		margin-bottom: 0.5%;
 		font-family: 'Archivo Black', sans-serif;
 		font-weight: 900;
-		font-size: 2.1em;
+		font-size: 1.5em;
 		text-decoration: none;
 		z-index: 10;
+		background-blend-mode: difference;
 	}	
 	a.navbuttons {
 		-webkit-text-stroke: 0.8px black;
@@ -71,7 +72,7 @@
 		height: 100vh;
 		/*min-height: 25rem;*/
 		width: 100%;
-		z-index= 0;
+		z-index= 2;
 		background-color: whitesmoke;
 	}
 	
@@ -81,7 +82,7 @@
 		left: 50%;
 		transform: translateX(-50%) translateY(-50%);
 		width: 100%;
-		z-index: 0;
+		z-index: 2;
 		filter: grayscale(1) brightness(1.1);
 		animation: vidfade 49s;
 		animation-fill-mode: forwards;
@@ -127,10 +128,76 @@
 		width: 100%;
 		height: 400vh;
 		background-color: whitesmoke;
+		mix-blend-mode: multiply;
+		z-index: 3;
+		
 		display: grid;
 		grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr;
 	}
+	
+	#letter_bg {
+		/*grid-column: 1 / 5;
+		grid-row: 1 / 5;*/
+		z-index: 0;
+		width: 100%;
+		height: 400vh;
+		position: absolute;
+		overflow: hidden;
+		
+		opacity: 0.07;
+		font-family: 'Lekha';
+		line-height: 0em;
+	}
+	#letter_bg01 {
+		display: inline-block;
+		position: absolute;
+		/*right: -20%;
+		top: -45%;*/
+		
+		margin: 0;
+		right: -20%;
+		top: 10%;
+		
+		font-size: 80em;
+	}
+	#letter_bg02 {
+		display: inline-block;
+		position: absolute;
+		/*left: -20%;
+		top: -10%;*/
+		
+		margin: 0;
+		left: -20%;
+		top: 30%;
+		
+		font-size: 80em;
+	}
+	#letter_bg03 {
+		display: inline-block;
+		position: absolute;
+		/*left: -20%;
+		top: -10%;*/
+		
+		margin: 0;
+		right: -20%;
+		top: 60%;
+		
+		font-size: 80em;
+	}
+	#letter_bg04 {
+		display: inline-block;
+		position: absolute;
+		/*left: -20%;
+		top: -10%;*/
+		
+		margin: 0;
+		left: -20%;
+		top: 90%;
+		
+		font-size: 80em;
+	}
+	
 	.sec_testdrive {
 		background-color: whitesmoke;
 		width: 100%;
@@ -195,7 +262,6 @@
 		right: 0%;
 		
 		height: 600px;
-		
 	}
 	#f01img02 {
 		position: absolute;
@@ -274,13 +340,12 @@
 	/*Feature Title & Description*/
 	/*h1 {
 	position: absolute;
-	overflow: hidden;
 	
 	font-family: 'Archivo Black', sans-serif;
-	opacity: 0.05;
-	font-size: 24em;
+	opacity: 0.07;
+	font-size: 14em;
 	letter-spacing: -0.07em;
-}*/
+	}*/
 	
 	
 	

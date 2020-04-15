@@ -3,7 +3,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-		document.getElementById("landinglogo").style.cssText = "width: 8%; opacity: 1; top: 5%;";
+		document.getElementById("landinglogo").style.cssText = "width: 10%; opacity: 1; top: 5%;";
 		document.getElementById("landinglogo").src = "img/Logo_small.svg";
 	} else {
 		document.getElementById("landinglogo").style.cssText = "width: 49.5%; opacity: 0;";
@@ -50,29 +50,58 @@ $('a[href*="#"]')
 
 //Randomize the placeholder text
 $(function(){
-  var list = ['Do you like ginger in your chai?','What do you call a crocodile in Hindi?','Favourite Bollywood actor?','Aapka naam?','Aapki naam?','Yahan kuchh likh de, Thakur.','Full names of Shankar-Ehsaan-Loy?','Mogambo khush hua ki nahin?','Kitne patr the?'],
+	var list = ['Do you like ginger in your chai?','What do you call a crocodile in Hindi?','Favourite Bollywood actor?','Aapka naam?','Aapki naam?','Yahan kuchh likh de, Thakur.','Full names of Shankar-Ehsaan-Loy?','Mogambo khush hua ki nahin?','Kitne patr the?'],
       r = Math.floor(Math.random() * list.length);
-  $('#textfield').prop('placeholder',list[r]);
+	$('#textfield').prop('placeholder',list[r]);
+});
+
+//Randomize background text
+$(function(){
+	var list = ['X','O','G'],
+		r = Math.floor(Math.random() * list.length);
+	$('#letter_bg01').text(list[r]);
+	
+	var list2 = ['Q','B','A'],
+		r = Math.floor(Math.random() * list2.length);
+	$('#letter_bg02').text(list2[r]);
 });
 
 
+/*function parallax() {
+    var s = document.getElementById("f01img01");
+  var yPos = 0 - window.pageYOffset/5;  
+  s.style.top = 170 + yPos + "%"; }
 
+window.addEventListener("scroll", function(){
+    parallax(); 
+});*/
 
-//-----CUSTOM CURSOR
-/*
-// 01 store the .cursor in a simple variable called cursor
-$(document).ready(function(){
- var cursor = $('.cursor');
-});
-// 02 Make it follow the mouse
-$(document).ready(function(){
- var cursor = $('.cursor');
-
- $(window).mousemove(function(e) {
-        cursor.css({
-            top: e.clientY - cursor.height() / 2,
-            left: e.clientX - cursor.width() / 2
-        });
+$.fn.moveIt = function(){
+  var $window = $(window);
+  var instances = [];
+  
+  $(this).each(function(){
+    instances.push(new moveItItem($(this)));
+  });
+  
+  window.addEventListener('scroll', function(){
+    var scrollTop = $window.scrollTop();
+    instances.forEach(function(inst){
+      inst.update(scrollTop);
     });
+  }, {passive: true});
+}
+
+var moveItItem = function(el){
+  this.el = $(el);
+  this.speed = parseInt(this.el.attr('data-scroll-speed'));
+};
+
+moveItItem.prototype.update = function(scrollTop){
+  this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+};
+
+// Initialization
+$(function(){
+  $('[data-scroll-speed]').moveIt();
 });
-*/
